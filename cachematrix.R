@@ -8,26 +8,20 @@
 ## matrix. 3. set the value of the inverse matrix, 4. get the value of the inverse matrix.
 
 makeCacheMatrix <- function(x = matrix()) {
-  # initialize the cache to NULL
   cache <- NULL
-  
-  # set the matrix
   set <- function(a) {
     x <<- a
     cache <<- NULL
   }
   
-  # return the matrix
   get <- function() {
     x
   }
   
-  # set the cache to the inverse matrix 
   cacheInverse <- function(solve) {
     cache <<- solve
   }
   
-  # get the cache
   getInverse <- function() {
     cache
   }
